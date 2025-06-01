@@ -65,7 +65,7 @@ public class Monkey extends RescueAnimal {
         setAge(age);
         setWeight(weight);
         setAcquisitionDate(acquisitionDate);
-        setAcquisitionLocation(acquisitionCountry);
+        setAcquisitionCountry(acquisitionCountry);
         setTrainingStatus(trainingStatus);
         setReserved(reserved);
         setInServiceCountry(inServiceCountry);

@@ -413,7 +413,7 @@ public class Driver {
                         System.out.printf("%-15s %-15s %-15s %-15s %-15s\n", 
                                         dog.getName(), 
                                         dog.getTrainingStatus(), 
-                                        dog.getAcquisitionLocation(), 
+                                        dog.getAcquisitionCountry(), 
                                         dog.getReserved() ? "Yes" : "No", 
                                         dog.getInServiceCountry());
                     }
@@ -439,7 +439,7 @@ public class Driver {
                                         monkey.getName(), 
                                         monkey.getSpecies(), 
                                         monkey.getTrainingStatus(), 
-                                        monkey.getAcquisitionLocation(), 
+                                        monkey.getAcquisitionCountry(), 
                                         monkey.getReserved() ? "Yes" : "No", 
                                         monkey.getInServiceCountry());
                     }

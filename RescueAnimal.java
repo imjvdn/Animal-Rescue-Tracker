@@ -82,12 +82,12 @@ public class RescueAnimal {
 	}
 
 
-	public String getAcquisitionLocation() {
+	public String getAcquisitionCountry() {
 		return acquisitionCountry;
 	}
 
 
-	public void setAcquisitionLocation(String acquisitionCountry) {
+	public void setAcquisitionCountry(String acquisitionCountry) {
 		this.acquisitionCountry = acquisitionCountry;
 	}
 
