@@ -9,6 +9,7 @@ The Animal Rescue Tracker is a comprehensive management system developed for Gra
 - [Project Overview](#project-overview)
 - [Key Features](#key-features)
 - [System Architecture](#system-architecture)
+- [Project Structure](#project-structure)
 - [Class Structure](#class-structure)
 - [Training Status Workflow](#training-status-workflow)
 - [Installation and Setup](#installation-and-setup)
@@ -34,6 +35,34 @@ The Animal Rescue Tracker implements a robust object-oriented architecture with 
 - **Encapsulation**: All attributes are properly encapsulated with appropriate accessor and mutator methods
 - **Validation**: Input validation is implemented at multiple levels to ensure data integrity
 - **User Interface**: Command-line interface with intuitive menu-driven interaction
+- **Maven Build System**: Standardized build process for compilation, testing, and packaging
+
+## Project Structure
+
+The project follows standard Maven directory structure:
+
+```
+animal-rescue-tracker/
+├── pom.xml                  # Maven project configuration
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── graziosalvare/
+│   │               └── animalrescue/
+│   │                   ├── RescueAnimal.java
+│   │                   ├── Dog.java
+│   │                   ├── Monkey.java
+│   │                   └── Driver.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── graziosalvare/
+│                   └── animalrescue/
+│                       └── TestAnimalRescueTracker.java
+├── docs/                    # Documentation files
+└── .gitignore               # Git ignore configuration
+```
 
 ## Class Structure
 
@@ -88,28 +117,56 @@ Animals progress through a structured training pipeline:
 ### Prerequisites
 
 - Java Development Kit (JDK) 8 or higher
-- Command-line terminal
+- Git (for version control)
 
 ### Installation Steps
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/imjvdn/Animal-Rescue-Tracker.git
+   git clone https://github.com/your-username/animal-rescue-tracker.git
+   cd animal-rescue-tracker
    ```
 
-2. Navigate to the project directory:
+2. Build the project using the provided build script:
    ```bash
-   cd Animal-Rescue-Tracker
+   ./build.sh
    ```
 
-3. Compile the Java files:
+3. Run the application using the provided run script:
    ```bash
-   javac *.java
+   ./run.sh
    ```
 
-4. Run the application:
+### Alternative Build and Run Methods
+
+If you have Maven installed, you can use it to build and run the project:
+
+1. Build with Maven:
    ```bash
-   java Driver
+   mvn clean package
+   ```
+
+2. Run with Maven:
+   ```bash
+   mvn exec:java
+   ```
+
+You can also compile and run manually with Java:
+
+1. Compile the source files:
+   ```bash
+   javac -d target/classes src/main/java/com/graziosalvare/animalrescue/*.java
+   ```
+
+2. Run the application:
+   ```bash
+   java -cp target/classes com.graziosalvare.animalrescue.Driver
+   ```
+
+If you're using macOS with Homebrew-installed Java, you may need to use the full path:
+   ```bash
+   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/javac -d target/classes src/main/java/com/graziosalvare/animalrescue/*.java
+   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes com.graziosalvare.animalrescue.Driver
    ```
 
 ## Usage Guide
@@ -126,17 +183,37 @@ Animals progress through a structured training pipeline:
 
 ### Testing
 
-A comprehensive test suite is included to verify system functionality:
+The application includes a comprehensive test suite in `TestAnimalRescueTracker.java` that verifies:
 
+1. RescueAnimal class functionality
+2. Dog class inheritance and specific methods
+3. Monkey class inheritance, species validation, and specific attributes
+4. Method name consistency across all classes
+
+To run the tests using the provided shell script:
 ```bash
-java TestAnimalRescueTracker
+./run.sh test
 ```
 
-The test suite validates:
-- RescueAnimal class functionality
-- Dog class inheritance and specific methods
-- Monkey class inheritance, species validation, and specific attributes
-- Method name consistency across all classes
+Alternatively, if you have Maven installed:
+```bash
+mvn test
+```
+
+Or run the test class directly with Maven:
+```bash
+mvn exec:java -Dexec.mainClass="com.graziosalvare.animalrescue.TestAnimalRescueTracker"
+```
+
+You can also run tests directly with Java:
+```bash
+java -cp target/classes:target/test-classes com.graziosalvare.animalrescue.TestAnimalRescueTracker
+```
+
+If you're using macOS with Homebrew-installed Java:
+```bash
+/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes:target/test-classes com.graziosalvare.animalrescue.TestAnimalRescueTracker
+```
 
 ## Development Workflow
 
