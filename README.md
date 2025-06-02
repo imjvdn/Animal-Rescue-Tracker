@@ -1,7 +1,5 @@
 # Animal Rescue Tracker
 
-![Grazioso Salvare Logo](https://via.placeholder.com/150?text=Grazioso+Salvare)
-
 ## Project Overview
 
 The Animal Rescue Tracker is a comprehensive management system developed for Grazioso Salvare, an international search-and-rescue animal training organization. This Java-based application enables efficient tracking, management, and deployment of rescue animals that are trained to assist humans in life-threatening situations across the globe.
