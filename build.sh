@@ -6,8 +6,8 @@ JAVAC="$JAVA_HOME/bin/javac"
 JAVA="$JAVA_HOME/bin/java"
 
 # Create target directories
-mkdir -p target/classes
-mkdir -p target/test-classes
+mkdir -p target/classes/main/java/com/graziosalvare/animalrescue
+mkdir -p target/test-classes/test/java/com/graziosalvare/animalrescue
 
 # Compile main classes
 echo "Compiling main classes..."

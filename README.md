@@ -50,17 +50,19 @@ animal-rescue-tracker/
 │   │       └── com/
 │   │           └── graziosalvare/
 │   │               └── animalrescue/
-│   │                   ├── RescueAnimal.java
-│   │                   ├── Dog.java
-│   │                   ├── Monkey.java
-│   │                   └── Driver.java
+│   │                   ├── RescueAnimal.java (package main.java.com.graziosalvare.animalrescue)
+│   │                   ├── Dog.java (package main.java.com.graziosalvare.animalrescue)
+│   │                   ├── Monkey.java (package main.java.com.graziosalvare.animalrescue)
+│   │                   └── Driver.java (package main.java.com.graziosalvare.animalrescue)
 │   └── test/
 │       └── java/
 │           └── com/
 │               └── graziosalvare/
 │                   └── animalrescue/
-│                       └── TestAnimalRescueTracker.java
-├── docs/                    # Documentation files
+│                       └── TestAnimalRescueTracker.java (package test.java.com.graziosalvare.animalrescue)
+├── build.sh                 # Build script
+├── run.sh                   # Run script
+├── IDE_SETUP.md            # IDE setup guide
 └── .gitignore               # Git ignore configuration
 ```
 
@@ -160,13 +162,13 @@ You can also compile and run manually with Java:
 
 2. Run the application:
    ```bash
-   java -cp target/classes com.graziosalvare.animalrescue.Driver
+   java -cp target/classes main.java.com.graziosalvare.animalrescue.Driver
    ```
 
 If you're using macOS with Homebrew-installed Java, you may need to use the full path:
    ```bash
    /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/javac -d target/classes src/main/java/com/graziosalvare/animalrescue/*.java
-   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes com.graziosalvare.animalrescue.Driver
+   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes main.java.com.graziosalvare.animalrescue.Driver
    ```
 
 ## Usage Guide

@@ -13,13 +13,13 @@ fi
 # Function to run the main application
 run_app() {
     echo "Running Animal Rescue Tracker application..."
-    $JAVA -cp target/classes com.graziosalvare.animalrescue.Driver
+    $JAVA -cp target/classes main.java.com.graziosalvare.animalrescue.Driver
 }
 
 # Function to run the tests
 run_tests() {
     echo "Running Animal Rescue Tracker tests..."
-    $JAVA -cp target/classes:target/test-classes com.graziosalvare.animalrescue.TestAnimalRescueTracker
+    $JAVA -cp target/classes:target/test-classes test.java.com.graziosalvare.animalrescue.TestAnimalRescueTracker
 }
 
 # Check command line arguments

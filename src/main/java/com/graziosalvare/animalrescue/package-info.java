@@ -1,8 +1,8 @@
 /**
- * This package contains the Animal Rescue Tracker application classes
- * developed for Grazioso Salvare.
+ * This package contains classes for the Animal Rescue Tracker application.
  * 
- * The application provides functionality to track, manage, and deploy
- * rescue animals trained for search-and-rescue operations.
+ * The application tracks rescue animals for Grazioso Salvare, a rescue animal
+ * training company, and helps them track and manage animals in their service.
+ * 
  */
-package com.graziosalvare.animalrescue;
+package main.java.com.graziosalvare.animalrescue;

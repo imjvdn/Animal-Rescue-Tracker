@@ -1,4 +1,4 @@
-package com.graziosalvare.animalrescue;
+package main.java.com.graziosalvare.animalrescue;
 
 import java.lang.String;
 

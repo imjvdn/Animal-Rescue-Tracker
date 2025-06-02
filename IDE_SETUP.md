@@ -1,21 +1,28 @@
 # IDE Setup Guide for Animal Rescue Tracker
 
-This document provides guidance on setting up your IDE for the Animal Rescue Tracker project, particularly addressing common package declaration lint errors.
+This document provides guidance on setting up your IDE for the Animal Rescue Tracker project.
 
-## Common IDE Lint Errors
+## Package Structure
 
-You may encounter the following lint errors in your IDE:
+The project uses the following package structure:
 
-1. Package declaration errors:
-   - "The declared package 'com.graziosalvare.animalrescue' does not match the expected package 'main.java.com.graziosalvare.animalrescue'"
-   - "The declared package 'com.graziosalvare.animalrescue' does not match the expected package 'test.java.com.graziosalvare.animalrescue'"
+- Source files: `main.java.com.graziosalvare.animalrescue`
+- Test files: `test.java.com.graziosalvare.animalrescue`
 
-2. Unresolved type errors in test files:
-   - "RescueAnimal cannot be resolved to a type"
-   - "Dog cannot be resolved to a type"
-   - "Monkey cannot be resolved to a type"
+This structure includes the source directory (`main.java` or `test.java`) as part of the package name, which is compatible with many IDE configurations. This approach was chosen to resolve IDE lint errors that occur when the IDE expects the source directory to be part of the package name.
 
-These errors are related to how your IDE is configured to handle Maven project structures, but they don't affect the actual compilation or execution of the code when using the provided build scripts or Maven commands.
+## Benefits of This Package Structure
+
+1. **IDE Compatibility**: Eliminates lint errors in most IDEs without requiring special configuration
+2. **Clear Separation**: Clearly distinguishes between main and test code in the package name
+3. **Consistent Imports**: Provides a consistent way to import classes across the project
+
+## Build and Run
+
+The project's build and run scripts have been updated to work with this package structure:
+
+- `build.sh`: Compiles source files with the new package structure
+- `run.sh`: Executes the application or tests with the correct classpath and package names
 
 ## IDE-Specific Solutions
 
