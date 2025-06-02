@@ -1,5 +1,8 @@
 # Animal Rescue Tracker
 
+## Academic Integrity Notice
+This repository contains my work for the IT 145 course at Southern New Hampshire University. If you're a student in the same course, please be aware that directly copying this code may constitute an academic integrity violation. Use this as a reference for understanding concepts, not for submitting as your own work.
+
 ## Project Overview
 
 The Animal Rescue Tracker is a comprehensive management system developed for Grazioso Salvare, an international search-and-rescue animal training organization. This Java-based application enables efficient tracking, management, and deployment of rescue animals that are trained to assist humans in life-threatening situations across the globe.
@@ -125,16 +128,23 @@ Animals progress through a structured training pipeline:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/animal-rescue-tracker.git
-   cd animal-rescue-tracker
+   git clone https://github.com/imjvdn/Animal-Rescue-Tracker.git
+   cd Animal-Rescue-Tracker
    ```
 
-2. Build the project using the provided build script:
+2. Update the Java paths in build.sh and run.sh to match your local Java installation
+
+3. Make the scripts executable:
+   ```bash
+   chmod +x build.sh run.sh
+   ```
+
+4. Build the project using the provided build script:
    ```bash
    ./build.sh
    ```
 
-3. Run the application using the provided run script:
+5. Run the application using the provided run script:
    ```bash
    ./run.sh
    ```
@@ -165,10 +175,11 @@ You can also compile and run manually with Java:
    java -cp target/classes main.java.com.graziosalvare.animalrescue.Driver
    ```
 
-If you're using macOS with Homebrew-installed Java, you may need to use the full path:
+If Java is not in your system PATH, you may need to use the full path to your Java installation:
    ```bash
-   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/javac -d target/classes src/main/java/com/graziosalvare/animalrescue/*.java
-   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes main.java.com.graziosalvare.animalrescue.Driver
+   # Example for macOS with Homebrew
+   /path/to/your/java/bin/javac -d target/classes src/main/java/com/graziosalvare/animalrescue/*.java
+   /path/to/your/java/bin/java -cp target/classes main.java.com.graziosalvare.animalrescue.Driver
    ```
 
 ## Usage Guide
@@ -237,7 +248,7 @@ Contributions to the Animal Rescue Tracker project should follow these guideline
 
 ## License
 
-This project is proprietary software developed for Grazioso Salvare by Global Rain.
+This project is provided for educational purposes only. This code was developed as part of an academic assignment for Southern New Hampshire University's IT 145 course. You may view and learn from this code, but please do not use it for direct submission of academic assignments.
 
 ---
 
