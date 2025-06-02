@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# Define Java paths
+# Define Java paths - Update these paths to match your Java installation
+# Example for macOS with Homebrew-installed Java:
 JAVA_HOME="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"
+# Example for Windows: JAVA_HOME="C:\Program Files\Java\jdk-11"
+# Example for Linux: JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
+
 JAVA="$JAVA_HOME/bin/java"
 
 # Check if target directories exist, if not, run build script
