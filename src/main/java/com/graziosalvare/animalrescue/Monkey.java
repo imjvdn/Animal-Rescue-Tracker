@@ -1,3 +1,5 @@
+package main.java.com.graziosalvare.animalrescue;
+
 /**
  * Monkey class that inherits from RescueAnimal
  * This class represents monkeys used for search and rescue operations
