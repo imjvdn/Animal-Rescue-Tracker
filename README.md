@@ -1,8 +1,5 @@
 # Animal Rescue Tracker
 
-## Academic Integrity Notice
-This repository contains my work for the IT 145 course at Southern New Hampshire University. If you're a student in the same course, please be aware that directly copying this code may constitute an academic integrity violation. Use this as a reference for understanding concepts, not for submitting as your own work.
-
 ## Project Overview
 
 The Animal Rescue Tracker is a comprehensive management system developed for Grazioso Salvare, an international search-and-rescue animal training organization. This Java-based application enables efficient tracking, management, and deployment of rescue animals that are trained to assist humans in life-threatening situations across the globe.
