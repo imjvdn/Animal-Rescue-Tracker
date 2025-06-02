@@ -245,7 +245,7 @@ Contributions to the Animal Rescue Tracker project should follow these guideline
 
 ## License
 
-This project is provided for educational purposes only. This code was developed as part of an academic assignment for Southern New Hampshire University's IT 145 course. You may view and learn from this code, but please do not use it for direct submission of academic assignments.
+This project is open source and available for learning and reference purposes. You are free to view, fork, and learn from this code.
 
 ---
 
