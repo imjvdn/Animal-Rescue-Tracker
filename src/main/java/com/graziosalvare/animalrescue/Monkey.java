@@ -1,4 +1,4 @@
-package main.java.com.graziosalvare.animalrescue;
+package com.graziosalvare.animalrescue;
 
 /**
  * Monkey class that inherits from RescueAnimal
