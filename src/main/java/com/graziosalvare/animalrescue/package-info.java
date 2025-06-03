@@ -5,4 +5,4 @@
  * training company, and helps them track and manage animals in their service.
  * 
  */
-package main.java.com.graziosalvare.animalrescue;
+package com.graziosalvare.animalrescue;

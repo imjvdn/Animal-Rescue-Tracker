@@ -1,4 +1,4 @@
-package main.java.com.graziosalvare.animalrescue;
+package com.graziosalvare.animalrescue;
 
 /**
  * Dog class represents rescue dogs in the system.

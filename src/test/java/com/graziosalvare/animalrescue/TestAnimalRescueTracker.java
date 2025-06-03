@@ -1,8 +1,6 @@
-package test.java.com.graziosalvare.animalrescue;
+package com.graziosalvare.animalrescue;
 
-import main.java.com.graziosalvare.animalrescue.RescueAnimal;
-import main.java.com.graziosalvare.animalrescue.Dog;
-import main.java.com.graziosalvare.animalrescue.Monkey;
+// No imports needed since we're in the same package
 
 /**
  * Test class for the Animal Rescue Tracker application
