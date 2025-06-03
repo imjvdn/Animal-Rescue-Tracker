@@ -1,8 +1,6 @@
 package com.graziosalvare.animalrescue;
 
-import com.graziosalvare.animalrescue.RescueAnimal;
-import com.graziosalvare.animalrescue.Dog;
-import com.graziosalvare.animalrescue.Monkey;
+// No imports needed since we're in the same package
 
 /**
  * Test class for the Animal Rescue Tracker application
