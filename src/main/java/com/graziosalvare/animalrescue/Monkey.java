@@ -60,9 +60,17 @@ public class Monkey extends RescueAnimal {
                  String acquisitionCountry, String trainingStatus, boolean reserved,
                  String inServiceCountry) {
         
+        // Call the parent constructor
+        super();
+        
+        // Validate species before setting
+        if (!isValidSpecies(species)) {
+            throw new IllegalArgumentException("Invalid monkey species: " + species);
+        }
+        
         // Set RescueAnimal attributes using parent class setters
         setName(name);
-        setSpecies(species);
+        this.species = species; // Directly set species since we've already validated it
         setGender(gender);
         setAge(age);
         setWeight(weight);
@@ -150,16 +158,14 @@ public class Monkey extends RescueAnimal {
      * Validates that the species is one of the eligible monkey species
      * 
      * @param species The species to set
+     * @throws IllegalArgumentException if the species is not valid
      */
     public void setSpecies(String species) {
         // Validate species before setting
         if (isValidSpecies(species)) {
             this.species = species;
         } else {
-            // For invalid species, we could throw an exception or handle differently
-            // For now, we'll just set it to empty string
-            this.species = "";
-            System.out.println("Warning: Invalid monkey species provided.");
+            throw new IllegalArgumentException("Invalid monkey species: " + species);
         }
     }
     
