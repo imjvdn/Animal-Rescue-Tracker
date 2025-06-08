@@ -1,7 +1,5 @@
 package com.graziosalvare.animalrescue;
 
-import java.lang.String;
-
 /**
  * RescueAnimal class serves as the base class for all rescue animals in the system.
  * It encapsulates common attributes and behaviors shared by all rescue animals.

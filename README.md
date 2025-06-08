@@ -175,8 +175,8 @@ You can also compile and run manually with Java:
 If Java is not in your system PATH, you may need to use the full path to your Java installation:
    ```bash
    # Example for macOS with Homebrew
-   /path/to/your/java/bin/javac -d target/classes src/main/java/com/graziosalvare/animalrescue/*.java
-   /path/to/your/java/bin/java -cp target/classes main.java.com.graziosalvare.animalrescue.Driver
+   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/javac -d target/classes src/main/java/com/graziosalvare/animalrescue/*.java
+   /opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes com.graziosalvare.animalrescue.Driver
    ```
 
 ## Usage Guide
@@ -220,10 +220,19 @@ You can also run tests directly with Java:
 java -cp target/classes:target/test-classes com.graziosalvare.animalrescue.TestAnimalRescueTracker
 ```
 
-If you're using macOS with Homebrew-installed Java:
+If you're using macOS with Homebrew-installed Java (verified working command):
 ```bash
-/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes:target/test-classes com.graziosalvare.animalrescue.TestAnimalRescueTracker
+/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/bin/java -cp target/classes:src/test/java com.graziosalvare.animalrescue.TestAnimalRescueTracker
 ```
+
+## Recent Improvements
+
+The following improvements have been made to enhance code quality and robustness:
+
+1. **Enhanced Error Handling**: Improved validation in the Monkey class to throw proper exceptions for invalid species
+2. **Code Cleanup**: Removed unnecessary imports (e.g., java.lang.String from RescueAnimal)
+3. **Documentation**: Enhanced JavaDoc comments throughout the codebase
+4. **Package Documentation**: Improved package-info.java with comprehensive documentation
 
 ## Development Workflow
 
